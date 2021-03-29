@@ -72,6 +72,7 @@ typedef uint64_t TickType_t;
 #define portSTACK_GROWTH   (-1)
 #define portTICK_PERIOD_MS ((TickType_t)1000 / configTICK_RATE_HZ)
 #define portBYTE_ALIGNMENT 8
+#define portDONT_DISCARD   __attribute__((used))
 /*-----------------------------------------------------------*/
 
 /* Scheduler utilities. */

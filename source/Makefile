@@ -171,8 +171,6 @@ LINKER_FLAGS=   -Wl,--gc-sections 		                      \
                 -Wl,--wrap=malloc                             \
 			    -Wl,--wrap=free                               \
 			    -lm                                           \
-			    -Wl,--undefined=vTaskSwitchContext            \
-			    -Wl,--undefined=pxCurrentTCB                  \
 			    -Wl,--defsym=__FLASH_SIZE__=$(flash_size)     \
 			    -Wl,--defsym=__BOOTLDR_SIZE__=$(bootldr_size) \
 				$(DEV_LDFLAGS)                                \
